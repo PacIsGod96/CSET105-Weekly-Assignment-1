@@ -19,9 +19,11 @@ do{
 }while(true)
 
 function maxScore(){
-    let num1 = 1
+    
     let score = 0; 
-    for(let num2 = 1; num1 <= 20; num1++){
+    for(let i = 1; i <= 20; i++){
+        let num1 = Math.floor(Math.random() * 11)
+        let num2 = Math.floor(Math.random() * 11)
         console.log(`${num1} + ${num2} = `)
         let ans = Number(prompt(`Enter Answer: `)) 
         if(isNaN(ans)){
@@ -40,10 +42,14 @@ function maxScore(){
 }
 
 function threeOut(){
-    let num1 = 1;
+
+    let num1 = Math.floor(Math.random() * 11)
+    let num2 = Math.floor(Math.random() * 11)
     let score = 0; 
     let lives = 3;
-    for(let num2 = 1; num1 <= 5; num1++){
+    for(let j = 1; j <= 5; j++){
+        num1 = Math.floor(Math.random() * 11)
+        num2 = Math.floor(Math.random() * 11)
         console.log(`${num1} + ${num2} = `)
         let ans = Number(prompt(`Enter Answer: `)) 
         if(isNaN(ans)){
@@ -62,19 +68,21 @@ function threeOut(){
                 return;
             }
         }
+        
     }
-    let num4 = 1
-    for(let num3 = 1; num4 <= 5; num3++){
-        console.log(`${num3} * ${num4} = `)
+    for(x = 1; x <= 5; x++){
+        num1 = Math.floor(Math.random() * 11)
+        num2 = Math.floor(Math.random() * 11)
+        console.log(`${num1} * ${num2} = `)
         let ans = Number(prompt(`Enter Answer: `)) 
         if(isNaN(ans)){
             score = score - 0;
             console.log(`Okay, Your score: ${score}`);
-        }else if(ans == (num3 * num4) ){
+        }else if(ans == (num1 * num2) ){
             score = score + 10;
             console.log(`Correct! your score: ${score}`)
             
-        }else if(ans !== (num3 * num4))
+        }else if(ans !== (num1 * num2))
         {
             lives = lives - 1;
             console.log(`Wrong! your score: ${score}`)
