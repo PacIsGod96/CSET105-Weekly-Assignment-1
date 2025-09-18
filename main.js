@@ -257,8 +257,8 @@ function hard(){
                 }
            }
         }else if(symbol == 5){
-            num1 = Math.floor(Math.random() * 10)
-            num2 = Math.floor(Math.random() * 10)
+            num1 = Math.floor(Math.random() * 100)
+            num2 = Math.floor(Math.random() * 100)
             console.log(`${num1} * ${num2} = `);
             ans = Number(prompt(`Enter Answer: `))
             if(isNaN(ans)){
@@ -273,8 +273,8 @@ function hard(){
                 console.log(`Wrong! your score: ${score}`)
             }
         }else if(symbol == 6){
-            num1 = Math.floor(Math.random() * 10)
-            num2 = Math.floor(Math.random() * 10)
+            num1 = Math.floor(Math.random() * 100)
+            num2 = Math.floor(Math.random() * 100)
             if((num1 / num2 == undefined) || ((num1 / num2) % 2 !== 0) || ((num1 / num2) % 3 !== 0)){
                 counter = counter +1;
             }else if((num1 / num2 !== undefined) && (((num1 / num2) % 2 == 0) || ((num1 / num2) % 3 == 0))){
@@ -297,8 +297,8 @@ function hard(){
                 }
             }
         }else if(symbol == 7){
-            num1 = Math.floor(Math.random() * 10)
-            num2 = Math.floor(Math.random() * 10)
+            num1 = Math.floor(Math.random() * 100)
+            num2 = Math.floor(Math.random() * 100)
             console.log(`${num1} % ${num2} = `);
             ans = Number(prompt(`Enter Answer: `))
             if(isNaN(ans)){
@@ -555,8 +555,8 @@ function hardThreeOut(){
                 }
            }
         }else if(symbol == 5){
-            num1 = Math.floor(Math.random() * 10)
-            num2 = Math.floor(Math.random() * 10)
+            num1 = Math.floor(Math.random() * 100)
+            num2 = Math.floor(Math.random() * 100)
             console.log(`${num1} * ${num2} = `);
             ans = Number(prompt(`Enter Answer: `))
             if(isNaN(ans)){
@@ -571,8 +571,8 @@ function hardThreeOut(){
                 console.log(`Wrong! your score: ${score}`)
             }
         }else if(symbol == 6){
-            num1 = Math.floor(Math.random() * 10)
-            num2 = Math.floor(Math.random() * 10)
+            num1 = Math.floor(Math.random() * 100)
+            num2 = Math.floor(Math.random() * 100)
             if((num1 / num2 == undefined) || ((num1 / num2) % 2 !== 0) || ((num1 / num2) % 3 !== 0)){
                 counter = counter +1;
             }else if((num1 / num2 !== undefined) && (((num1 / num2) % 2 == 0) || ((num1 / num2) % 3 == 0))){
@@ -597,8 +597,8 @@ function hardThreeOut(){
                 }
             }
         }else if(symbol == 7){
-            num1 = Math.floor(Math.random() * 10)
-            num2 = Math.floor(Math.random() * 10)
+            num1 = Math.floor(Math.random() * 100)
+            num2 = Math.floor(Math.random() * 100)
             console.log(`${num1} % ${num2} = `);
             ans = Number(prompt(`Enter Answer: `))
             if(isNaN(ans)){
